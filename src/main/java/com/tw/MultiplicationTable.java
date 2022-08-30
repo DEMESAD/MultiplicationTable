@@ -21,9 +21,23 @@ public class MultiplicationTable {
         return (end > start)?true:false;
     }
 
-
     public String generateTable(int start, int end) {
-        return null;
+        String generateAll = "";
+        for(int i = start; i <= end; i++){
+            for(int x = start; x <= i; x++){
+                String table = x +"*"+i+"="+x*i;
+                if(x == i) {
+                    generateAll += table;
+                }
+                else {
+                    generateAll += table+"  ";
+                }
+            }
+            if(i != end) {
+                generateAll += System.lineSeparator();
+            }
+        }
+        return generateAll;
     }
 
     public String generateLine(int start, int row) {
