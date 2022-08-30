@@ -13,13 +13,14 @@ public class MultiplicationTable {
         return (start >= 4 && end <= 100)? true:false;
     }
     public Boolean isInRange(int number) {
-        return null;
+        return(number > 0 && number <= 1000)?true:false;
 
     }
     public Boolean isStartNotBiggerThanEnd(int start, int end) {
 
-        return null;
+        return (end > start)?true:false;
     }
+
 
     public String generateTable(int start, int end) {
         return null;
