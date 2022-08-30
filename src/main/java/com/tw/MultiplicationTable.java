@@ -10,7 +10,7 @@ public class MultiplicationTable {
             return start + "*" + end + "=" + result;
     }
     public Boolean isValid(int start, int end) {
-        return null;
+        return (start >= 4 && end <= 100)? true:false;
     }
     public Boolean isInRange(int number) {
         return null;
